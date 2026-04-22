@@ -122,13 +122,13 @@ python pipeline_smart_grobid.py
 python score_smart_grobid.py
 ```
 
-5. Recompute benchmark metrics:
+5. Compute benchmark metrics:
 
 ```bash
 python evaluate_benchmark_metrics.py
 ```
 
-6. Regenerate report figures:
+6. Generate report figures:
 
 ```bash
 jupyter lab notebooks/report_figures.ipynb
@@ -137,5 +137,5 @@ jupyter lab notebooks/report_figures.ipynb
 ## Notes
 
 - This repository does not include the full paper corpus due to size limits. To reproduce the workflow, users should scrape or collect their own paper set, arrange it in the expected directory structure, and then run the scripts above.
-- The scraper used during this project to collect the conference papers as pdf files was [ai_papers_scrapper](https://github.com/george-gca/ai_papers_scrapper). Scraped paper collections can differ across time, venues, PDF availability, and preprocessing quality, hence reproduced results may differ from those reported in the project.
-- Exact LLM outputs may vary across providers, model versions, and reruns.
+- The scraper used during this project was [ai_papers_scrapper](https://github.com/george-gca/ai_papers_scrapper). Scraped paper collections can differ across time, venues, PDF availability, hence reproduced results may differ from those reported in the project.
+- Exact LLM outputs may vary across providers, models, and reruns.
