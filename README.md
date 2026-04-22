@@ -40,11 +40,11 @@ After model and pipeline selection, the Smart GROBID pipeline was applied to a l
 Figure placeholders:
 
 <p align="center">
-  <img src="figures/final_venue_mean_repro_score_2023_2025.pdf" alt="Mean reproducibility score by conference" width="700">
+  <img src="figures/final_venue_mean_repro_score_2023_2025.png" alt="Mean reproducibility score by conference" width="700">
 </p>
 
 <p align="center">
-  <img src="figures/final_neurips_before_after_checklist_violin.pdf" alt="NeurIPS reproducibility scores before and after checklist adoption" width="700">
+  <img src="figures/final_neurips_before_after_checklist_violin.png" alt="NeurIPS reproducibility scores before and after checklist adoption" width="700">
 </p>
 
 ## Repository Structure
