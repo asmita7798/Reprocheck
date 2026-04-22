@@ -70,19 +70,16 @@ pip install -r requirements.txt
 External tools:
 
 - `GROBID` must be running locally for the TEI-based pipeline
-- `PyMuPDF` is used for PDF extraction
 
 ## API Keys
 
 The classification and pipeline scripts use OpenAI-compatible endpoints. Users must use their obtained API keys for running the scripts.
 
-Example:
+Following endpoints have been used in the scripts:
 
 ```bash
 export GROQ_API_KEY=...
 ```
-
-Some scripts also support:
 
 ```bash
 export ACADEMIC_CLOUD_API_KEY=...
@@ -139,11 +136,11 @@ jupyter lab notebooks/report_figures.ipynb
 
 ## Reproducing The Project
 
-This repository does not include the full paper corpus or generated outputs. To reproduce the workflow, users should scrape or collect their own paper set, arrange it in the expected directory structure, and then run the scripts above.
+This repository does not include the full paper corpus due to size limits. To reproduce the workflow, users should scrape or collect their own paper set, arrange it in the expected directory structure, and then run the scripts above.
 
-The scraper used during this project was [ai_papers_scrapper](https://github.com/george-gca/ai_papers_scrapper).
+The scraper used during this project to collect the conference papers as pdf files was [ai_papers_scrapper](https://github.com/george-gca/ai_papers_scrapper).
 
 ## Notes
 
 - Exact LLM outputs may vary across providers, model versions, and reruns.
-- Scraped paper collections can differ across time, venues, PDF availability, and preprocessing quality, reproduced results may differ from those reported in the project.
+- Scraped paper collections can differ across time, venues, PDF availability, and preprocessing quality, hence reproduced results may differ from those reported in the project.
