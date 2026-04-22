@@ -37,8 +37,6 @@ After model and pipeline selection, the Smart GROBID pipeline was applied to a l
 - For NeurIPS, papers from the post-checklist period showed a higher score distribution than papers from the pre-checklist period.
 - Code and data reporting patterns differed across venues, suggesting that reporting quality varies not only in overall score but also in the type of evidence papers provide.
 
-Figure placeholders:
-
 <p align="center">
   <img src="figures/final_venue_mean_repro_score_2023_2025.png" alt="Mean reproducibility score by conference" width="700">
 </p>
