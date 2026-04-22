@@ -31,7 +31,7 @@ The pipeline variants were evaluated on a manually annotated benchmark of 60 pap
 
 ## Large-Scale Analysis
 
-After model and pipeline selection, the Smart GROBID pipeline was applied to a larger conference-paper sample to study reproducibility reporting across venues and over time.
+After model and pipeline selection, the Smart GROBID pipeline was applied to a larger conference-paper sample of 3000+ papers to study reproducibility reporting across venues and over time.
 
 - Across the shared 2023-2025 comparison window, ACL and NeurIPS showed higher average reproducibility scores than AAAI.
 - For NeurIPS, papers from the post-checklist period showed a higher score distribution than papers from the pre-checklist period.
