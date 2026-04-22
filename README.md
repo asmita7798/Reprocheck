@@ -4,7 +4,7 @@ Reprocheck is an automated reproducibility-auditing pipeline that has been devel
 
 Reproducibility is a central concern in modern AI and ML research, but auditing papers manually at scale is slow, labor-intensive, and difficult to standardize. Important signals such as dataset reporting, train/test splits, hyperparameters, hardware details, code availability, proofs, and method descriptions are often distributed unevenly across papers and expressed in inconsistent ways. Reprocheck addresses this by combining rule-based evidence retrieval with LLM-based item-level classification to audit reproducibility-related reporting directly from paper content.
 
-The project compares multiple pipeline variants based on different text extraction and context construction strategies, including a baseline PyMuPDF pipeline, a Smart PyMuPDF pipeline, and a Smart GROBID pipeline. The final large-scale analysis reported in the project uses the Smart GROBID pipeline.
+The project compares multiple pipeline variants based on different text extraction and context construction strategies, and different sized LLMs, including a baseline PyMuPDF pipeline, a Smart PyMuPDF pipeline, and a Smart GROBID pipeline. The final large-scale analysis reported in the project uses the Smart GROBID pipeline due to its performance metrics.
 
 This repository includes the code needed for:
 
@@ -18,7 +18,7 @@ The goal of the project is not to replace expert review, but to support large-sc
 
 ## Benchmark Results
 
-The pipeline variants were evaluated on a manually annotated benchmark of 60 papers. The strongest overall performance in the report was obtained by the Smart GROBID pipeline with the larger model.
+The pipeline variants were evaluated on a manually annotated benchmark of 60 papers. The strongest overall performance in the report was obtained by the Smart GROBID pipeline with the larger Llama model.
 
 | Pipeline | Accuracy | Cohen's Kappa |
 | --- | ---: | ---: |
@@ -134,13 +134,8 @@ python evaluate_benchmark_metrics.py
 jupyter lab notebooks/report_figures.ipynb
 ```
 
-## Reproducing The Project
-
-This repository does not include the full paper corpus due to size limits. To reproduce the workflow, users should scrape or collect their own paper set, arrange it in the expected directory structure, and then run the scripts above.
-
-The scraper used during this project to collect the conference papers as pdf files was [ai_papers_scrapper](https://github.com/george-gca/ai_papers_scrapper).
-
 ## Notes
 
+- This repository does not include the full paper corpus due to size limits. To reproduce the workflow, users should scrape or collect their own paper set, arrange it in the expected directory structure, and then run the scripts above.
+- The scraper used during this project to collect the conference papers as pdf files was [ai_papers_scrapper](https://github.com/george-gca/ai_papers_scrapper). Scraped paper collections can differ across time, venues, PDF availability, and preprocessing quality, hence reproduced results may differ from those reported in the project.
 - Exact LLM outputs may vary across providers, model versions, and reruns.
-- Scraped paper collections can differ across time, venues, PDF availability, and preprocessing quality, hence reproduced results may differ from those reported in the project.
