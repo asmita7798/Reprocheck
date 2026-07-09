@@ -35,30 +35,6 @@ The scripts can be adapted to other compatible providers and models by modifying
 
 ---
 
-## Project Structure
-
-```text
-reprocheck/
-├── figures/
-│   ├── final_neurips_before_after_checklist_*.png
-│   └── final_venue_mean_repro_score_*.png
-│
-├── scripts/
-│   ├── classify_paper_types.py
-│   ├── evaluate_benchmark_metrics.py
-│   ├── extract_tei_with_grobid.py
-│   ├── pipeline_pymupdf_baseline.py
-│   ├── pipeline_smart_grobid.py
-│   ├── pipeline_smart_pymupdf.py
-│   ├── report_figures.ipynb
-│   └── score_smart_grobid.py
-│
-├── README.md
-└── requirements.txt
-```
-
----
-
 ## Quick Start
 
 ### 1. Clone the Repository
@@ -179,10 +155,6 @@ The analysis revealed:
 - increasing reporting scores over time,
 - shifts following checklist adoption,
 - and differing code/data reporting patterns across venues.
-
-<p align="center">
-  <img src="figures/final_venue_mean_repro_score_2023_2025.png" alt="Mean reproducibility score by conference" width="700">
-</p>
 
 ---
 
